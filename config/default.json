@@ -1,0 +1,3 @@
+{
+    "mongoDBURL" :"mongodb+srv://arun:mongo123@testcluster-qjjdv.gcp.mongodb.net/test?retryWrites=true"
+}
