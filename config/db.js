@@ -5,7 +5,11 @@ const db = config.get('mongoDBURL');
 const connectDB = async () => {
     console.log("Trying to connect to MongoDB");
     try{
-        await mongoose.connect(db,{ useNewUrlParser: true,useUnifiedTopology: true });
+        await mongoose.connect(db,{ 
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            useCreateIndex:true
+        });
 
         console.log("MongoDB connected...");
     }
